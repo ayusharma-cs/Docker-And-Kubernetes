@@ -1,0 +1,14 @@
+Port Mapping Nginx Server:
+
+- docker run -p 8080:80 nginx
+
+Port Mapping And Volume Mapping:
+
+- docker run -p 8080:80 -v ${pwd}:/usr/share/nginx/html nginx
+
+OR
+
+- docker run -p 8080:80 -v path/folder/nginx:/usr/share/nginx/html nginx
+
+Note: At the place of ${pwd} you can also use relative path. For using ${pwd} use are in that directory.
+Note: For Port Mapping & Volume Mapping - you can create html file and write some code to display on web server.
